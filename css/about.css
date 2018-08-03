@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.centering {
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: rgb(255, 255, 255);
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml5 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: 0.5 0;
+}
