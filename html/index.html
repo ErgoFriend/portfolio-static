@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/anime.min.js"></script>
-
+    <link rel="icon" type="image/png" href="image/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/body.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 
@@ -18,23 +18,23 @@
     <div class="main">
         <div class="centering">
             <div class="title">
-                <a href="" onclick="window.location.reload(true);">
+                <a href="/">
                     <h1 class="ml12 content">Ergo Friend</h1>
                 </a>
             </div>
             <div class="ml5">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
-                    <a href="{% url 'mysite:about' %}">
+                    <a href="/about">
                         <h1 class="ml12 content mabout">About</h1>
                     </a>
-                    <a href="{% url 'mysite:works' %}">
+                    <a href="/works">
                         <h1 class="ml12 content">works</h1>
                     </a>
-                    <a href="{% url 'mysite:blog' %}">
+                    <a href="/blog">
                         <h1 class="ml12 content">blog</h1>
                     </a>
-                    <a href="{% url 'mysite:contact' %}">
+                    <a href="/contact">
                         <h1 class="ml12 content">contact</h1>
                     </a>
                     <span class="line line2"></span>

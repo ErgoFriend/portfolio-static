@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/body.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.3.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.3.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.3.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.3.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="centering">
+      <div class="title">
+        <a href="/">
+          <h1 class="ml12 content">Ergo Friend</h1>
+        </a>
+      </div>
+      <div class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <a href="/about">
+            <h1 class="ml12 content mabout">About</h1>
+          </a>
+          <a href="/works">
+            <h1 class="ml12 content">works</h1>
+          </a>
+          <a href="/blog">
+            <h1 class="ml12 content">blog</h1>
+          </a>
+          <a href="/contact">
+            <h1 class="ml12 content">contact</h1>
+          </a>
+          <span class="line line2"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
+</html>
