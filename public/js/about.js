@@ -27,14 +27,14 @@ window.addEventListener("DOMContentLoaded", function() {
   anime
     .timeline({ loop: false })
     .add({
-      targets: ".ml5 .line",
+      targets: ".ml5 .line1 .line2",
       opacity: [0.5, 1],
       scaleX: [0, 1],
       easing: "easeInOutExpo",
       duration: 700
     })
     .add({
-      targets: ".ml5 .line",
+      targets: ".ml5 .line1 .line2s",
       duration: 600,
       easing: "easeOutExpo",
       translateY: function(e, i, l) {

@@ -1,16 +1,15 @@
 .main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 100vh;
-}
-.centering {
   margin: 0 auto;
 }
 
 .header {
+  justify-content: space-between;
   position: fixed;
+  align-items: center;
 }
 .footer {
   position: fixed;
@@ -32,16 +31,14 @@
   line-height: 1em;
 }
 
-.ml5 {
-  display: inline-block;
+.ml5 .text-wrapper {
   width: 100%;
-  text-align: center;
 }
 
 .ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
   line-height: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ml5 .line {
@@ -54,4 +51,15 @@
   width: 100%;
   background-color: #ffffff;
   transform-origin: 0.5 0;
+}
+
+.sub {
+  width: 27vw;
+  padding: 10px;
+}
+
+@media screen and (max-width: 860px) {
+  .sub {
+    width: 100%;
+  }
 }
