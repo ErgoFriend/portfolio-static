@@ -1,11 +1,24 @@
-body {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url(../image/404.png);
-  background-size: cover;
-  background-position: 50% 50%;
+@media (max-width: 599px) {
+  body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/404_small.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+@media (min-width: 600px) and (min-width: 960px) {
+  body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/404.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 }
 
 body::before {

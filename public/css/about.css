@@ -6,19 +6,28 @@
   margin: 0 auto;
 }
 
-.header {
-  justify-content: space-between;
+.box {
   position: fixed;
-  align-items: center;
+  width: 100%;
+}
+
+.header {
+  margin-top: 3%;
+}
+
+.header .sub {
+  width: 100%;
+  margin: 1% 0;
 }
 .footer {
-  position: fixed;
   bottom: 0px;
+  margin-bottom: 3%;
 }
 
 .ml12 {
   font-weight: 200;
-  font-size: 1.8em;
+  font-size: 1.5em;
+  margin: 0;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -54,8 +63,10 @@
 }
 
 .sub {
-  width: 27vw;
-  padding: 10px;
+  width: 33vw;
+  padding: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 860px) {
