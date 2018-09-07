@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
+  $("#loader").fadeOut(400, function() {
+    $(this).remove();
+  });
   // Wrap every letter in a span
   $(".ml12").each(function() {
     $(this).html(

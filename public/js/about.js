@@ -1,4 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
+  $("#loader").fadeOut(400, function() {
+    $(this).remove();
+  });
   // Wrap every letter in a span
   $(".ml12").each(function() {
     $(this).html(
@@ -42,4 +45,25 @@ window.addEventListener("DOMContentLoaded", function() {
         return offset + "em";
       }
     });
+
+  anime.timeline({ loop: false }).add({
+    targets: "#lineDrawing .lines path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 1500,
+    delay: function(el, i) {
+      return i * 250;
+    },
+    direction: "alternate"
+  });
+  anime.timeline({ loop: false }).add({
+    targets: "#lineDrawing2 .lines path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 3000,
+    delay: function(el, i) {
+      return i * 250;
+    },
+    direction: "alternate"
+  });
 });
